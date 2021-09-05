@@ -12,9 +12,11 @@ const usuariosGet = (req = request, resp = response) => {
 }
 
 const usuariosDelete = (req, resp) => {
+    const id = req.params.id
     resp.status(201).json({
         ok: true,
-        mensaje: 'DELETE'
+        mensaje: 'DELETE',
+        id
     })
 }
 
@@ -31,9 +33,11 @@ const usuariosPost = (req, resp) => {
 
 
 const usuariosPut = (req, resp) => {
+    const id = req.params.id
     resp.status(200).json({
         ok: true,
-        mensaje: 'PUT'
+        mensaje: 'PUT',
+        id
     })
 }
 

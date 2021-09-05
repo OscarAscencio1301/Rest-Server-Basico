@@ -4,8 +4,8 @@ const router = Router();
 
 router.get('/', usuariosGet)
 router.delete('/', usuariosDelete)
-router.put('/', usuariosPut )
-router.post('/', usuariosPost)
+router.put('/:id', usuariosPut )
+router.post('/:id', usuariosPost)
 
 
 module.exports = router;
